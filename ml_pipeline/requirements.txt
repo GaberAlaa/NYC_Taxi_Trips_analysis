@@ -1,0 +1,5 @@
+pyspark==4.1.3
+xgboost
+pandas
+pyarrow
+boto3

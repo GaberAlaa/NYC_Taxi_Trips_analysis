@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.idea/
+.vscode/
+*.db
+*.sqlite
+.DS_Store
+
+data/*
+!data/raw/.gitkeep
+!data/storage/.gitkeep
+
+airflow/logs/*
+!airflow/logs/.gitkeep
