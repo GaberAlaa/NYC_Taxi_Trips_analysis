@@ -1,6 +1,6 @@
 # NYC Taxi Trips Big Data Pipeline
 **
-<img width="1536" height="1024" alt="Project_Overview" src="https://github.com/user-attachments/assets/69153f94-0389-4cd6-967b-03e0c76ba137" />**
+<img width="1537" height="1023" alt="Image" src="https://github.com/user-attachments/assets/aa31b995-32fd-4004-9ccd-7bd92d531349" />
 
 ## Data Source
 
