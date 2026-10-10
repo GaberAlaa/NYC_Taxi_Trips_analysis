@@ -1,0 +1,20 @@
+Column Name,Data Type,Description,Example Values
+VendorID,Integer,"Code indicating the TPEP provider that provided the record. (1=Creative Mobile Technologies, LLC; 2=VeriFone Inc.)","1, 2"
+tpep_pickup_datetime,Timestamp,Date and time when the meter was engaged.,2023-01-01 00:32:10
+tpep_dropoff_datetime,Timestamp,Date and time when the meter was disengaged.,2023-01-01 00:40:36
+passenger_count,Float/Integer,Number of passengers in the vehicle (driver-entered value).,"1.0, 0.0"
+trip_distance,Float,Elapsed trip distance in miles reported by the taximeter.,"0.97, 2.51"
+RatecodeID,Float,"Final rate code in effect at the end of the trip. (1=Standard rate, 2=JFK, 3=Newark, 4=Nassau/Westchester, 5=Negotiated fare, 6=Group ride)",1.0
+store_and_fwd_flag,String,"Flag indicating whether the trip record was held in vehicle memory before sending to the vendor (""N"" = not a store and forward trip, ""Y"" = store and forward trip).",N
+PULocationID,Integer,TLC Taxi Zone in which the taximeter was engaged.,"161, 43"
+DOLocationID,Integer,TLC Taxi Zone in which the taximeter was disengaged.,"141, 237"
+payment_type,Integer,"Numeric code signifying how the passenger paid for the trip. (1=Credit card, 2=Cash, 3=No charge, 4=Dispute, 5=Unknown, 6=Voided trip)","1, 2"
+fare_amount,Float,Time-and-distance fare calculated by the meter.,"9.3, 14.9"
+extra,Float,"Miscellaneous extras and surcharges (e.g., general rush hour and overnight charges).","1.0, 7.25"
+mta_tax,Float,$0.50 MTA tax that is automatically triggered based on the metered rate in use.,0.5
+tip_amount,Float,Tip amount (automatically populated for credit card tips; cash tips are not included).,"0.0, 4.0, 15.0"
+tolls_amount,Float,Total amount of all tolls paid in trip.,0.0
+improvement_surcharge,Float,$0.30 improvement surcharge assessed on hailed trips at the drop off.,1.0
+total_amount,Float,Total amount charged to passengers (does not include cash tips).,"14.3, 34.9"
+congestion_surcharge,Float,"Congestion surcharge added for trips starting, ending, or passing through Manhattan below 96th street.","2.5, 0.0"
+airport_fee,Float,Surcharge for pickups at LaGuardia and JFK airports.,"0.0, 1.25"

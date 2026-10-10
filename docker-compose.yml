@@ -65,6 +65,7 @@ services:
       - "8080:8080"
       - "7077:7077"
     volumes:
+      - ./data:/opt/project/data
       - ./spark_jobs:/opt/project/spark_jobs:ro
       - ./streaming:/opt/project/streaming:ro
       - ./ml_pipeline:/opt/project/ml_pipeline:ro
@@ -130,6 +131,7 @@ services:
     ports:
       - "8501:8501"
     volumes:
+      - ./data:/data:ro
       - ./streamlit_app:/app
     depends_on:
       - seaweedfs
